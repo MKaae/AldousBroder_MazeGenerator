@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Labyrinth generator</title>
+</head>
+<body>
+    <main>
+        <h1>Welcome to the labyrinth generator</h1>
+        <input type="number" id="rows-cols" placeholder="Number a width/height">
+        <p id="start-text">Select start point</p>
+        <select id="start">
+            <option value="Top-left">Top left</option>
+            <option value="Top-right">Top right</option>
+            <option value="Bottom-left">Bottom left</option>
+            <option value="Bottom-right">Bottom right</option>
+        </select>
+        <p id="end-text">Select goal point</p>
+        <select id="end">
+            <option value="Bottom-right">Bottom right</option>
+            <option value="Bottom-left">Bottom left</option>
+            <option value="Top-left">Top left</option>
+            <option value="Top-right">Top right</option>
+        </select>
+        <button id="generate-btn">Generate Maze</button>
+        <textarea id="json-text" class="hidden"></textarea>
+    </main>
+    <script src="./view/view.js" type="module"></script>
+</body>
+</html>

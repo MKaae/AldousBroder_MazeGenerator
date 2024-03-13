@@ -1,0 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(120, 253, 37);
+}
+h1 {
+    color: rgb(120, 253, 37);
+}
+select {
+    min-width: 200px;
+    color: rgb(120, 253, 37);
+}
+button {
+    min-width: 200px;
+    color: rgb(120, 253, 37);
+    margin-top: 10px;
+    align-self: center;
+}
+input {
+    min-width: 150px;
+}
+textarea {
+    max-width: 600px;
+}
+textarea:not([rows]) {
+    height: 600px;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: flex;
+}
